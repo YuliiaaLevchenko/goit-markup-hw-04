@@ -68,6 +68,7 @@ line-height: 1.5;
 letter-spacing: 0.32px;
 padding: 24px 0;
 display: block;
+position: relative;
     }
     .nav-menu:focus,
     .nav-menu:hover {
@@ -86,12 +87,8 @@ border-radius: 2px;
 background: var(--OCEAN, #404BBF);
 content: '';
 position: absolute;
-
-
-
-
-
-
+left: 0;
+bottom: -1px;
         }
     .adress-text {
         font-style: normal;
@@ -196,6 +193,20 @@ border: none;
 .our-list li {
       flex-basis: calc((100% - 3 * 24px) / 4)
     }
+.our-item-icon {
+    width: 264px;
+    height: 112px;
+    flex-shrink: 0;
+    border-radius: 4px;
+border: 1px solid var(--LIGHT-SLATE, #8E8F99);
+background: var(--CLOUD, #F4F4FD);
+text-align: center;
+padding: 24px 24px;
+}
+.antenna icon {
+   
+}
+
 .section-title {
 color: #2E2F42;
 font-size: 20px;
