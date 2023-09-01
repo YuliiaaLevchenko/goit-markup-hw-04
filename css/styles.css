@@ -130,9 +130,7 @@ background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
 }  
-.hero-section-menu {
 
-}
 .hero-text {
     color:  #FFF;
     text-align: center;
@@ -203,10 +201,6 @@ background: var(--CLOUD, #F4F4FD);
 text-align: center;
 padding: 24px 24px;
 }
-.antenna icon {
-   
-}
-
 .section-title {
 color: #2E2F42;
 font-size: 20px;
@@ -245,12 +239,34 @@ letter-spacing: 0.32px;
 .team-profession {
     text-align: center;
 }
-.social-list-item {
-    fill: var(--IRIS, #4D5AE5);
+.social-list-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
     
 }
-.social-list-icon {fill: #4D5AE5;
-    fill: var(--IRIS, #4D5AE5);
+.social-list-item {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #4D5AE5;
+    padding: 12px;
+    transition-duration: 250ms;
+    transition-property: background-color;
+ }
+ .social-list-item:hover,
+ .social-list-item:focus {
+    background-color: #31D0AA;
+ }
+.social-list-link a {
+   
+}
+.social-icon {
+    fill: #F4F4FD;
 }
 .team-title,
 .portfolio-title {
@@ -280,7 +296,16 @@ margin-bottom: 72px;
 .portfolio-list {
     
     width: calc((100% - 48px) / 3);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.portfolio-list:hover, 
+.portfolio-list:focus {
+    box-shadow:
+     rgba(46, 47, 66, 0.08),
+     rgba(46, 47, 66, 0.16),
+     rgba(46, 47, 66, 0.08);
+}
+
 .portfolio-item {
     background-color: #FFFFFF;
 }
@@ -315,7 +340,9 @@ padding: 32px 16px;
 .footer-section {
     background-color: #2E2F42;
     padding: 100px 0;
+    display: flex;
 }
+
 .footer-list {
    display: inline-block;
    margin-bottom: 16px;
@@ -332,4 +359,25 @@ max-width: 264px;
 }
 .footer-logo {
     color: #4d5ae5;
+}
+.social-text {
+    color: #FFF;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.socialicon {
+    display: flex;
+    
+}
+.socialitemlink {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: #4D5AE5;}
+.socialsvg {
+    fill: #F4F4FD;
 }
