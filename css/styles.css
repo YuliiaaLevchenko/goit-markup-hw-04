@@ -245,6 +245,10 @@ letter-spacing: 0.32px;
 .team-profession {
     text-align: center;
 }
+.social-list-item {
+    fill: var(--IRIS, #4D5AE5);
+    
+}
 .social-list-icon {fill: #4D5AE5;
     fill: var(--IRIS, #4D5AE5);
 }
