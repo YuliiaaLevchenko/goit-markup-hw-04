@@ -424,6 +424,10 @@ a {
   padding: 100px 0;
   display: flex;
 }
+.footer-container {
+    display: flex;
+    align-items: baseline;
+}
 .footer-info {
   display: flex;
   align-items: baseline;
